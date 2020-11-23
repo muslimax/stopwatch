@@ -52,7 +52,7 @@ for (let i = 0; i < links.length; i++) {
     // HTMLelement.addEventListener("событие", функция) - привязывает функцию (слушателя) к событию
     links[i].addEventListener("click", function (e) {
         e.preventDefault()// метод отменяет событию по умолчанию
-        console.log(e);
+        // console.log(e);
         // HTMLelement.classList.add("класс") - добавляет класс к тегу
         // HTMLelement.classList.contain("класс") - проверяет наличие класса у тега
         // HTMLelement.classList.remove("класс") - удаляет класс у тега
@@ -105,7 +105,7 @@ function timer() {
         stopS.innerHTML++;
         if (stopS.innerHTML == 60) {
             stopS.innerHTML = 0;
-            m++;
+            stopM.innerHTML++;
         }
         if (stopM.innerHTML == 60) {
             stopM.innerHTML = 0;
